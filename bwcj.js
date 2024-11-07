@@ -1,12 +1,23 @@
-export bwcjck="ud27qYIe-36X-5qMmajsHSyY4mhAmS4VKlERaI_6zxaeGpjXpDoGEskdjsVEWVFR"
-export bwcjuid="911296627650686978"
+"""
+霸王茶姬签到
 
+打开微信小程序抓webapi.qmai.cn里面的qm-user-token(一般在请求头里)填到变量bwcjck里面即可
 
+还需要抓取 userId(在https://webapi.qmai.cn/web/cmk-center/sign/takePartInSign接口的返回值中可找到), 填到变量bwcjuid
+
+支持多用户运行
+
+多用户用&或者@隔开
+例如账号1：10086 账号2： 1008611
+则变量为10086&1008611
+export bwcjck=""
+export bwcjuid=""
+
+注意：ck 和 uid 需要顺序对应
 
 cron: 0 0,7 * * *
 const $ = new Env("霸王茶姬签到");
-
-
+"""
 import requests
 import re
 import os
