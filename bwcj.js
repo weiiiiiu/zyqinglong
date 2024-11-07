@@ -1,5 +1,4 @@
-"""
-霸王茶姬签到
+
 
 
 export bwcjck="ud27qYIe-36X-5qMmajsHSyY4mhAmS4VKlERaI_6zxaeGpjXpDoGEskdjsVEWVFR"
@@ -9,7 +8,7 @@ export bwcjuid="911296627650686978"
 
 cron: 0 0,7 * * *
 const $ = new Env("霸王茶姬签到");
-"""
+
 import requests
 import re
 import os
